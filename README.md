@@ -1,8 +1,8 @@
-###  DATE: 
+###  DATE: 4.3.25
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  NAME: JESU SMARTIA A
+###  ROLL NO :212223110016
+###  DEPARTMENT: CSE(IoT)
 
 
 
@@ -86,15 +86,28 @@ The main features of LPC2148 include the following.
 
 
 ## STM 32 CUBE PROGRAM :
-
-
-
+```
+#include "main.h"
+#include "stdio.h"
+int main(void)
+{
+  while (1)
+  {
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0, GPIO_PIN_RESET);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0, GPIO_PIN_SET);
+    HAL_Delay(1000);
+  }
+}
+```
 
 
 ## OUTPUT  :
  
- 
- 
+ ![EXP1 IMG1 IOT](https://github.com/user-attachments/assets/0f483027-86f4-4be6-8575-6ea769139122)
+
+ ![EXP1 IMG2 IOT](https://github.com/user-attachments/assets/b28a584e-d434-4676-b9d6-0d0276be134e)
+
  
 ## Result :
 Interfacing a digital output with ARM microcontroller based IOT development is executed and the results are verified.
